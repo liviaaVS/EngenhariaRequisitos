@@ -1,7 +1,7 @@
 ---
 name: Task Backend
 about: "Funcionalidades ou ajustes no backend."
-title: "[Hierarquia de dependencia] -  Verbo + o que essa issue vai fazer?"
+title: "[Hierarquia de dependência] -  Verbo + o que essa issue vai fazer?"
 labels: "backend"
 assignees: "liviaavs"
 ---
