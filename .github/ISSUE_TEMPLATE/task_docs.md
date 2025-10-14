@@ -1,7 +1,7 @@
 ---
 name: Task Documentation
 about: "Novos documentos ou ajustes na pasta docs."
-title: "[Hierarquia de dependencia] -  Verbo + o que essa issue vai fazer?"
+title: "[Hierarquia de dependência] -  Verbo + o que essa issue vai fazer?"
 labels: "documentação"
 assignees: "liviaavs"
 branch: "main"
