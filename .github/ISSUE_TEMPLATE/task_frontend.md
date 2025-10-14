@@ -1,7 +1,7 @@
 ---
 name: Task Frontend
 about: "Funcionalidades ou ajustes no frontend."
-title: "[Hierarquia de dependencia] -  Verbo + o que essa issue vai fazer?"
+title: "[Hierarquia de dependência] -  Verbo + o que essa issue vai fazer?"
 labels: "frontend"
 assignees: "liviaavs"
 ---
