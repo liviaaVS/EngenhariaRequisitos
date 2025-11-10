@@ -88,15 +88,57 @@ A plataforma será uma solução web responsiva que conecta fotógrafos desporti
 
 | Campo             | Descrição / Exemplo                                                                                                                                   |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificação** | NF01                                                                                                                                                  |
-| **Objetivo**      | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.         |
-| **Escala**        | Tempo decorrido em segundos (escala de proporção)                                                                                                     |
-| **Métrica**       | Medir o tempo entre pressionar "Encontrar fotos" e o aplicativo exibir a listagem de fotos encontradas naquela corrida. Medindo a diferença de tempo. |
-| **Mínimo**        | Menos de 10s para quando houver mais de 1000 fotografias, e menos de 5s para pelo menos 95% de todos os demais casos                                                                                                    |
-| **Intervalo OK**  | Entre 0,5 e 3 s para mais de 98% de todos os casos                                                                                                    |
-| **Ótimo**         | Menos de 0,5 s para 100% de todos os usuários       
+| **Identificação** | NF04                                                                                                                                                  |
+| **Objetivo**      | Garantir alta disponibilidade da plataforma, permitindo acesso contínuo aos serviços essenciais.                                                     |
+| **Escala**        | Tempo/dias de indisponibilidade por mês; porcentagem de tempo disponível (uptime).                                                                  |
+| **Métrica**       | Medir o tempo total de indisponibilidade dos serviços críticos (autenticação, catálogo, compra e download) em um mês de calendário.                  |
+| **Mínimo**        | Disponibilidade >= 83% (máximo 5 dias de indisponibilidade por mês, conforme requisito original).                                                   |
+| **Intervalo OK**  | Disponibilidade >= 95% (menos de 36 horas de indisponibilidade por mês).                                                                           |
+| **Ótimo**         | Disponibilidade >= 99,9% (menos de 43 minutos de indisponibilidade por mês).                                                                        |
 
-- para requisitos não funcionais não mensuráveis, escrever como ele vai ser atingido, 
-                                                                                                  |
+| Campo             | Descrição / Exemplo                                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identificação** | NF05                                                                                                                                                  |
+| **Objetivo**      | Garantir tempo de resposta adequado nas operações de busca, navegação e downloads para preservar a experiência do usuário.                          |
+| **Escala**        | Tempo decorrido em segundos (escala de proporção).                                                                                                   |
+| **Métrica**       | Medir o tempo entre ação do usuário (ex.: pressionar "Encontrar fotos") e a apresentação da listagem de resultados; medir latência média/percentis. |
+| **Mínimo**        | Menos de 10s quando houver mais de 1000 fotografias; para demais casos, menos de 5s para >=95% das requisições.                                      |
+| **Intervalo OK**  | Tempo de resposta entre 0,5 e 3 s para >=98% das requisições.                                                                                        |
+| **Ótimo**         | Menos de 0,5 s para 100% das requisições.                                                                                                           |
+
+| Campo             | Descrição / Exemplo                                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identificação** | NF06                                                                                                                                                  |
+| **Objetivo**      | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.         |
+| **Escala**        | Número de usuários simultâneos e volume de objetos de mídia armazenados; também tempo de provisionamento para escala horizontal.                       |
+| **Métrica**       | Medir a capacidade máxima suportada sem degradar NF05 (desempenho) além do intervalo OK; medir tempo para adicionar nós/instâncias e reequilibrar carga. |
+| **Mínimo**        | Suportar 10.000 acessos simultâneos com degradação de desempenho controlada (picos toleráveis conforme NF05 mínimo).                                 |
+| **Intervalo OK**  | Suportar aumento de 2x na carga em até 15 minutos com balanceamento e provisionamento automáticos e sem exceder NF05 Intervalo OK.                       |
+| **Ótimo**         | Escalar automaticamente para 4x a carga base em <=5 minutos mantendo NF05 Ótimo para 95% das requisições.                                             |
+
+### 9.2 Requisitos não funcionais não mensuráveis - operacionalização
+
+Abaixo descrevemos como cada requisito não-funcional considerado não-mensurável será atingido (controles, responsáveis, evidências e verificação):
+
+- NF01 — Controle de acesso de usuários (Segurança)
+
+	- Como será atingido: implementação de autenticação por tokens (OAuth 2.0 / OpenID Connect) e autorização baseada em funções (RBAC). Senhas armazenadas com hashing forte (bcrypt/Argon2). Controle de sessão, timeouts e proteção contra brute-force (rate limiting + bloqueio temporário). Logs de auditoria para ações sensíveis (uploads, alterações de preço, compras).  
+	- Responsáveis/Componentes: Serviço de Identidade (Auth Service), gateway de API, base de dados de usuários.  
+	- Evidências/Verificação: testes de penetração, revisão de código de segurança, varredura de dependências (SCA), logs de auditoria e relatórios de acesso.  
+	- Critério de aceitação: apenas usuários autenticados conseguem acessar endpoints restritos; permissões testadas via casos de teste automatizados; auditoria mostra trilha de eventos por usuário.
+
+- NF02 — Usabilidade e navegabilidade (Usabilidade)
+
+	- Como será atingido: aplicar princípios de design responsivo (mobile-first), testes de usabilidade com protótipos (2-4 usuários por iteração), e métricas de UX (taxa de conversão, tempo para completar tarefas-chave). Implementação de componentes UI reutilizáveis e acessibilidade.  
+	- Responsáveis/Componentes: equipe de produto/UX, front-end, QA.  
+	- Evidências/Verificação: relatórios de sessões de teste de usabilidade, resultados de testes A/B, métricas de monitoramento real (p. ex. tempo médio para checkout, taxa de desistência), e validação de acessibilidade automática/manual.  
+	- Critério de aceitação: fluxos críticos (upload, busca, compra) executáveis por usuários de teste sem assistência; conformidade verificada por ferramenta e revisão manual.
+
+- NF03 — Conformidade legal (Legalidade)
+
+	- Como será atingido: definir requisitos legais e políticas (LGPD, direito autoral e direito de imagem), incluir termos de uso e fluxos de consentimento para uploads, armazenamento de logs de consentimento, e mecanismo para remoção de conteúdo mediante solicitação. Revisão jurídica das políticas e workflows.  
+	- Responsáveis/Componentes: equipe jurídica, back-end, product owner.  
+	- Evidências/Verificação: documentação de políticas, registros de consentimento, relatórios de conformidade, auditorias legais periódicas.  
+	- Critério de aceitação: mecanismos de coleta de consentimento implementados e auditáveis; testes de processo de remoção de conteúdo funcionais; revisão legal aprovada.
 
 #### <span style="color: blue; font-size: 20px">#</span> [GLOSSÁRIO](../glossario/glossario.md)
