@@ -73,6 +73,29 @@ A plataforma será uma solução web responsiva que conecta fotógrafos desporti
 
 #### <span style="color: blue; font-size: 20px">#</span> [REGRAS DE NEGÓGIO](../regras/regras-de-negocio.md)
 
+| Código | Nome                            | Descrição                                                                                                        |
+| ------ | ------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| RF01   | Cadastro de usuários            | O sistema deve permitir o cadastro de usuários como **Fotógrafo**, **Cliente** ou **Organizador de Evento**.     |
+| RF02   | Autenticação de usuários        | O sistema deve permitir que usuários cadastrados realizem login e logout na plataforma.                          |
+| RF03   | Gestão de perfil                | O sistema deve permitir que usuários editem suas informações de perfil.                                          |
+| RF04   | Upload de mídias                | O sistema deve permitir que fotógrafos façam upload de fotos e vídeos.                                           |
+| RF05   | Gestão de catálogo              | O sistema deve permitir que fotógrafos organizem mídias por evento, data, modalidade e álbuns.                   |
+| RF06   | Definição de preços e licenças  | O sistema deve permitir que fotógrafos definam preços e tipos de licenciamento para suas mídias.                 |
+| RF07   | Visualização de prévias         | O sistema deve permitir a visualização de prévias de fotos e vídeos com marca d’água para visitantes e clientes. |
+| RF08   | Busca e filtros                 | O sistema deve permitir a busca de mídias por evento, fotógrafo, atleta, modalidade e data.                      |
+| RF09   | Criação de álbuns               | O sistema deve permitir que clientes criem e gerenciem álbuns digitais personalizados.                           |
+| RF10   | Compra de mídias                | O sistema deve permitir que clientes adquiram fotos e vídeos disponíveis na plataforma.                          |
+| RF11   | Download de conteúdos           | O sistema deve permitir que clientes façam o download de mídias adquiridas conforme o tipo de licença.           |
+| RF12   | Histórico de compras            | O sistema deve manter um histórico das compras realizadas pelos clientes.                                        |
+| RF13   | Relatórios de vendas            | O sistema deve permitir que fotógrafos visualizem relatórios de vendas e ganhos.                                 |
+| RF14   | Comunicação entre usuários      | O sistema deve permitir a troca de mensagens entre fotógrafos, clientes e organizadores de eventos.              |
+| RF15   | Gestão de eventos               | O sistema deve permitir que organizadores de eventos criem e gerenciem eventos desportivos.                      |
+| RF16   | Credenciamento de fotógrafos    | O sistema deve permitir que organizadores credenciem fotógrafos para eventos específicos.                        |
+| RF17   | Gestão de direitos de imagem    | O sistema deve permitir o registro e controle de consentimentos de direitos de imagem associados às mídias.      |
+| RF18   | Avaliação de conteúdos          | O sistema deve permitir que clientes avaliem conteúdos adquiridos.                                               |
+| RF19   | Moderação e remoção de conteúdo | O sistema deve permitir a remoção de mídias mediante solicitação legal ou administrativa.                        |
+| RF20   | Perfil de visualização pública  | O sistema deve permitir que visitantes visualizem perfis de fotógrafos e amostras de conteúdos.                  |
+
 ## 9. Requisitos não-funcionais
 
 | Código | Nome                           | Descrição                                                                                                                                                 | Categoria        | Classificação |
