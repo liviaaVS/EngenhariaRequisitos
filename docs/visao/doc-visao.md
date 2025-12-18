@@ -82,7 +82,7 @@ A plataforma será uma solução web responsiva que conecta fotógrafos desporti
 | RF05   | Gestão de catálogo              | O sistema deve permitir que fotógrafos organizem mídias por evento, data, modalidade e álbuns.                   |
 | RF06   | Definição de preços e licenças  | O sistema deve permitir que fotógrafos definam preços e tipos de licenciamento para suas mídias.                 |
 | RF07   | Visualização de prévias         | O sistema deve permitir a visualização de prévias de fotos e vídeos com marca d’água para visitantes e clientes. |
-| RF08   | Busca e filtros                 | O sistema deve permitir a busca de mídias por evento, fotógrafo, atleta, modalidade e data.                      |
+| RF08   | Busca e filtros                 | O sistema deve permitir a busca de mídias por evento, fotógrafo, face do atleta, número de peito, modalidade e data.                      |
 | RF09   | Criação de álbuns               | O sistema deve permitir que clientes criem e gerenciem álbuns digitais personalizados.                           |
 | RF10   | Compra de mídias                | O sistema deve permitir que clientes adquiram fotos e vídeos disponíveis na plataforma.                          |
 | RF11   | Download de conteúdos           | O sistema deve permitir que clientes façam o download de mídias adquiridas conforme o tipo de licença.           |
