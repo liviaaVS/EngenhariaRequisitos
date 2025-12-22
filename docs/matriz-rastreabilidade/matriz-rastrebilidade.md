@@ -13,7 +13,7 @@
 ## Matriz de Rastreabilidade – Requisitos Funcionais × Fontes de Elicitação
 
 | Requisito | Nome do Requisito               | FE1 | FE2 | FE3 | FE4 | FE5 | FE6 |
-| --------- | ------------------------------- | :-: | :-: | :-: | :-: | :-: | :-: |
+|-----------|---------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | RF01      | Cadastro de usuários            |  X  |  X  |     |  X  |  X  |     |
 | RF02      | Autenticação de usuários        |  X  |  X  |     |  X  |     |     |
 | RF03      | Gestão de perfil                |  X  |  X  |     |     |  X  |     |
@@ -22,7 +22,7 @@
 | RF06      | Definição de preços e licenças  |  X  |  X  |  X  |  X  |     |     |
 | RF07      | Visualização de prévias         |  X  |  X  |  X  |     |  X  |     |
 | RF08      | Busca e filtros                 |  X  |  X  |  X  |     |  X  |     |
-| RF09      | Criação de álbuns               |  X  |  X  |     |     |  X  |   X  |
+| RF09      | Criação de álbuns               |  X  |  X  |     |     |  X  |  X  |
 | RF10      | Compra de mídias                |  X  |  X  |  X  |  X  |  X  |     |
 | RF11      | Download de conteúdos           |  X  |  X  |     |  X  |     |     |
 | RF12      | Histórico de compras            |  X  |  X  |     |     |     |     |
@@ -30,9 +30,9 @@
 | RF14      | Comunicação entre usuários      |  X  |  X  |     |     |  X  |  X  |
 | RF15      | Gestão de eventos               |  X  |  X  |  X  |  X  |     |     |
 | RF16      | Credenciamento de fotógrafos    |  X  |  X  |     |  X  |     |     |
-| RF17      | Gestão de direitos de imagem    |  X  |  X  |     |  X  |     |   X  |
+| RF17      | Gestão de direitos de imagem    |  X  |  X  |     |  X  |     |  X  |
 | RF18      | Avaliação de conteúdos          |  X  |  X  |  X  |     |     |     |
-| RF19      | Moderação e remoção de conteúdo |  X  |     |     |  X  |     |  X   |
+| RF19      | Moderação e remoção de conteúdo |  X  |     |     |  X  |     |  X  |
 | RF20      | Perfil de visualização pública  |  X  |  X  |  X  |     |  X  |     |
 
 
@@ -40,7 +40,7 @@ Requisitos Não Funcionais (ISO/IEC 25010)
 
 
 | Requisito | Nome do Requisito              | FE1 | FE2 | FE3 | FE4 | FE5 | FE6 | FE7 | FE8 |
-| --------- | ------------------------------ | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+|-----------|--------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | NF01      | Controle de acesso de usuários |  X  |  X  |     |  X  |     |     |  X  |  X  |
 | NF02      | Usabilidade e navegabilidade   |  X  |  X  |  X  |     |  X  |     |  X  |  X  |
 | NF03      | Conformidade legal             |  X  |  X  |     |  X  |     |     |  X  |  X  |

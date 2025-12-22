@@ -5,7 +5,7 @@
 ## Histórico de Revisões
 
 | Data       | Versão | Descrição             | Autor                          |
-| ---------- | ------ | --------------------- | ------------------------------ |
+|------------|--------|-----------------------|--------------------------------|
 | 30/09/2025 | 1.0.0  | Elaboração do Projeto | Todos os integrantes da equipe |
 
 ## 1. Objetivo do projeto
@@ -18,7 +18,7 @@ O projeto tem como objetivo o desenvolvimento de uma plataforma web acessível e
 ## 2. Descrição do problema
 
 | Categoria    | Descrição                                                                                                                                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Problema** | Plataformas de imagens desportivas podem demandar **altos investimentos financeiros**, e serem **pouco adequadas** para fotógrafos independentes, oferecendo pouco reconhecimento do trabalho.                           |
 | **Afeta**    | Fotógrafos independentes, que perdem visibilidade e receita; e clientes (clubes, atletas, jornalistas, agências e fãs), que têm dificuldade em acessar conteúdos de qualidade a preços justos.                           |
 | **Impacta**  | Baixa rentabilidade para fotógrafos, dificuldade de aquisição legal de conteúdos e desrespeito aos direitos autorais.                                                                                                    |
@@ -27,7 +27,7 @@ O projeto tem como objetivo o desenvolvimento de uma plataforma web acessível e
 ## 3. Descrição dos usuários
 
 | Nome                      | Descrição                                                                                                                                    | Responsabilidade                                                                                                                                                                                                                                   |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Fotógrafo**             | Profissional independente responsável por produzir, catalogar e vender conteúdos visuais (fotos e vídeos) de eventos desportivos.            | <ul><li>Fazer upload de mídias</li><li>Criar e gerir catálogos</li><li>Definir preços e tipos de licenciamento</li><li>Acompanhar vendas e relatórios</li><li>Comunicar-se com clientes</li><li>Garantir a conformidade legal das mídias</li></ul> |
 | **Cliente**               | Usuário registrado que pode adquirir conteúdos e criar álbuns personalizados. Pode, eventualmente, atuar também como organizador de eventos. | <ul><li>Pesquisar e adquirir mídias</li><li>Criar e gerir álbuns digitais</li><li>Efetuar downloads de conteúdos adquiridos</li><li>Avaliar conteúdos comprados</li><li>Comunicar-se com fotógrafos</li></ul>                                      |
 | **Organizador de Evento** | Pessoa ou entidade (clube, federação, patrocinador, etc.) responsável por gerir a cobertura de um evento desportivo.                         | <ul><li>Divulgar eventos e credenciar fotógrafos</li><li>Gerir direitos de imagem do evento</li><li>Facilitar a conexão entre fotógrafos e clientes</li><li>Adquirir conteúdos produzidos no evento</li></ul>                                      |
@@ -45,7 +45,7 @@ Os usuários da plataforma atuam principalmente no contexto desportivo, incluind
 ## 5. Principais necessidades dos usuários
 
 | Usuário                   | Necessidades Principais                                                                                                                               |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Fotógrafo**             | - Plataforma económica para venda<br>- Proteção de direitos autorais<br>- Ferramentas eficientes de gestão de catálogo<br>- Canal direto com clientes |
 | **Cliente**               | - Acesso fácil a conteúdos de qualidade<br>- Preços justos<br>- Processo de compra simplificado<br>- Organização de álbuns pessoais                   |
 | **Organizador de Evento** | - Controlo sobre a cobertura fotográfica<br>- Gestão de direitos de imagem<br>- Facilitação de venda de conteúdos do evento                           |
@@ -73,71 +73,71 @@ A plataforma será uma solução web responsiva que conecta fotógrafos desporti
 
 #### <span style="color: blue; font-size: 20px">#</span> [REGRAS DE NEGÓGIO](../regras/regras-de-negocio.md)
 
-| Código | Nome                            | Descrição                                                                                                        |
-| ------ | ------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| RF01   | Cadastro de usuários            | O sistema deve permitir o cadastro de usuários como **Fotógrafo**, **Cliente** ou **Organizador de Evento**.     |
-| RF02   | Autenticação de usuários        | O sistema deve permitir que usuários cadastrados realizem login e logout na plataforma.                          |
-| RF03   | Gestão de perfil                | O sistema deve permitir que usuários editem suas informações de perfil.                                          |
-| RF04   | Upload de mídias                | O sistema deve permitir que fotógrafos façam upload de fotos e vídeos.                                           |
-| RF05   | Gestão de catálogo              | O sistema deve permitir que fotógrafos organizem mídias por evento, data, modalidade e álbuns.                   |
-| RF06   | Definição de preços e licenças  | O sistema deve permitir que fotógrafos definam preços e tipos de licenciamento para suas mídias.                 |
-| RF07   | Visualização de prévias         | O sistema deve permitir a visualização de prévias de fotos e vídeos com marca d’água para visitantes e clientes. |
-| RF08   | Busca e filtros                 | O sistema deve permitir a busca de mídias por evento, fotógrafo, face do atleta, número de peito, modalidade e data.                      |
-| RF09   | Criação de álbuns               | O sistema deve permitir que clientes criem e gerenciem álbuns digitais personalizados.                           |
-| RF10   | Compra de mídias                | O sistema deve permitir que clientes adquiram fotos e vídeos disponíveis na plataforma.                          |
-| RF11   | Download de conteúdos           | O sistema deve permitir que clientes façam o download de mídias adquiridas conforme o tipo de licença.           |
-| RF12   | Histórico de compras            | O sistema deve manter um histórico das compras realizadas pelos clientes.                                        |
-| RF13   | Relatórios de vendas            | O sistema deve permitir que fotógrafos visualizem relatórios de vendas e ganhos.                                 |
-| RF14   | Comunicação entre usuários      | O sistema deve permitir a troca de mensagens entre fotógrafos, clientes e organizadores de eventos.              |
-| RF15   | Gestão de eventos               | O sistema deve permitir que organizadores de eventos criem e gerenciem eventos desportivos.                      |
-| RF16   | Credenciamento de fotógrafos    | O sistema deve permitir que organizadores credenciem fotógrafos para eventos específicos.                        |
-| RF17   | Gestão de direitos de imagem    | O sistema deve permitir o registro e controle de consentimentos de direitos de imagem associados às mídias.      |
-| RF18   | Avaliação de conteúdos          | O sistema deve permitir que clientes avaliem conteúdos adquiridos.                                               |
-| RF19   | Moderação e remoção de conteúdo | O sistema deve permitir a remoção de mídias mediante solicitação legal ou administrativa.                        |
-| RF20   | Perfil de visualização pública  | O sistema deve permitir que visitantes visualizem perfis de fotógrafos e amostras de conteúdos.                  |
+| Código | Nome                            | Descrição                                                                                                            | Status       | Criticidade | Prioridade |
+|--------|---------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------|-------------|------------|
+| RF01   | Cadastro de usuários            | O sistema deve permitir o cadastro de usuários como **Fotógrafo**, **Cliente** ou **Organizador de Evento**.         | Documentação | Alta        | Alta       |
+| RF02   | Autenticação de usuários        | O sistema deve permitir que usuários cadastrados realizem login e logout na plataforma.                              | Documentação | Alta        | Alta       |
+| RF03   | Gestão de perfil                | O sistema deve permitir que usuários editem suas informações de perfil.                                              | Documentação | Média       | Média      |
+| RF04   | Upload de mídias                | O sistema deve permitir que fotógrafos façam upload de fotos e vídeos.                                               | Documentação | Alta        | Alta       |
+| RF05   | Gestão de catálogo              | O sistema deve permitir que fotógrafos organizem mídias por evento, data, modalidade e álbuns.                       | Documentação | Alta        | Alta       |
+| RF06   | Definição de preços e licenças  | O sistema deve permitir que fotógrafos definam preços e tipos de licenciamento para suas mídias.                     | Documentação | Alta        | Alta       |
+| RF07   | Visualização de prévias         | O sistema deve permitir a visualização de prévias de fotos e vídeos com marca d’água para visitantes e clientes.     | Documentação | Média       | Média      |
+| RF08   | Busca e filtros                 | O sistema deve permitir a busca de mídias por evento, fotógrafo, face do atleta, número de peito, modalidade e data. | Documentação | Alta        | Alta       |
+| RF09   | Criação de álbuns               | O sistema deve permitir que clientes criem e gerenciem álbuns digitais personalizados.                               | Documentação | Média       | Média      |
+| RF10   | Compra de mídias                | O sistema deve permitir que clientes adquiram fotos e vídeos disponíveis na plataforma.                              | Documentação | Alta        | Alta       |
+| RF11   | Download de conteúdos           | O sistema deve permitir que clientes façam o download de mídias adquiridas conforme o tipo de licença.               | Documentação | Alta        | Alta       |
+| RF12   | Histórico de compras            | O sistema deve manter um histórico das compras realizadas pelos clientes.                                            | Documentação | Média       | Média      |
+| RF13   | Relatórios de vendas            | O sistema deve permitir que fotógrafos visualizem relatórios de vendas e ganhos.                                     | Documentação | Média       | Média      |
+| RF14   | Comunicação entre usuários      | O sistema deve permitir a troca de mensagens entre fotógrafos, clientes e organizadores de eventos.                  | Documentação | Média       | Média      |
+| RF15   | Gestão de eventos               | O sistema deve permitir que organizadores de eventos criem e gerenciem eventos desportivos.                          | Documentação | Alta        | Alta       |
+| RF16   | Credenciamento de fotógrafos    | O sistema deve permitir que organizadores credenciem fotógrafos para eventos específicos.                            | Documentação | Alta        | Alta       |
+| RF17   | Gestão de direitos de imagem    | O sistema deve permitir o registro e controle de consentimentos de direitos de imagem associados às mídias.          | Documentação | Alta        | Alta       |
+| RF18   | Avaliação de conteúdos          | O sistema deve permitir que clientes avaliem conteúdos adquiridos.                                                   | Documentação | Baixa       | Baixa      |
+| RF19   | Moderação e remoção de conteúdo | O sistema deve permitir a remoção de mídias mediante solicitação legal ou administrativa.                            | Documentação | Alta        | Alta       |
+| RF20   | Perfil de visualização pública  | O sistema deve permitir que visitantes visualizem perfis de fotógrafos e amostras de conteúdos.                      | Documentação | Média       | Média      |
 
 ## 9. Requisitos não-funcionais
 
-| Código | Nome                           | Descrição                                                                                                                                                 | Categoria        | Classificação |
-| ------ | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------- |
-| NF01   | Controle de acesso de usuários | Apenas usuários autenticados poderão acessar a funcionalidades restritas (upload, compra, gestão de álbuns ou eventos).                                   | Segurança        | Obrigatório   |
-| NF02   | Usabilidade e navegabilidade   | A plataforma deve ser intuitiva, responsiva e de fácil utilização em computadores, tablets e dispositivos móveis.                                         | Usabilidade      | Obrigatório   |
-| NF03   | Conformidade legal             | O sistema deve respeitar as leis de **direito autoral** e **direito de imagem**, bem como normas de proteção de dados pessoais (ex.: GDPR/LGPD).          | Legalidade       | Obrigatório   |
-| NF04   | Disponibilidade                | A plataforma deve estar operacional 24/7, permitindo acesso contínuo a fotógrafos e clientes, com taxa máxima de indisponibilidade de **5 dias/mês**.     | Disponibilidade  | Desejável     |
-| NF05   | Desempenho                     | O sistema deve suportar até **10.000 acessos simultâneos** e permitir uploads/downloads de mídias, garantindo **tempo de resposta máximo de 3 segundos**. | Performance      | Obrigatório   |
-| NF06   | Escalabilidade                 | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.             | Manutenibilidade | Desejável     |
+| Código | Nome                           | Descrição                                                                                                                                                 | Categoria        | Classificação | Status       | Criticidade | Prioridade |
+|--------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|---------------|--------------|-------------|------------|
+| NF01   | Controle de acesso de usuários | Apenas usuários autenticados poderão acessar a funcionalidades restritas (upload, compra, gestão de álbuns ou eventos).                                   | Segurança        | Obrigatório   | Documentação | Alta        | Alta       |
+| NF02   | Usabilidade e navegabilidade   | A plataforma deve ser intuitiva, responsiva e de fácil utilização em computadores, tablets e dispositivos móveis.                                         | Usabilidade      | Obrigatório   | Documentação | Alta        | Alta       |
+| NF03   | Conformidade legal             | O sistema deve respeitar as leis de **direito autoral** e **direito de imagem**, bem como normas de proteção de dados pessoais (ex.: GDPR/LGPD).          | Legalidade       | Obrigatório   | Documentação | Alta        | Alta       |
+| NF04   | Disponibilidade                | A plataforma deve estar operacional 24/7, permitindo acesso contínuo a fotógrafos e clientes, com taxa máxima de indisponibilidade de **5 dias/mês**.     | Disponibilidade  | Desejável     | Documentação | Média       | Média      |
+| NF05   | Desempenho                     | O sistema deve suportar até **10.000 acessos simultâneos** e permitir uploads/downloads de mídias, garantindo **tempo de resposta máximo de 3 segundos**. | Performance      | Obrigatório   | Documentação | Alta        | Alta       |
+| NF06   | Escalabilidade                 | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.             | Manutenibilidade | Desejável     | Documentação | Média       | Média      |
 
 ### 9.1 Requisitos não funcionais mensuráveis - detalhamento.
 
-| Campo             | Descrição / Exemplo                                                                                                                                   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificação** | NF04                                                                                                                                                  |
-| **Objetivo**      | Garantir alta disponibilidade da plataforma, permitindo acesso contínuo aos serviços essenciais.                                                     |
-| **Escala**        | Tempo/dias de indisponibilidade por mês; porcentagem de tempo disponível (uptime).                                                                  |
-| **Métrica**       | Medir o tempo total de indisponibilidade dos serviços críticos (autenticação, catálogo, compra e download) em um mês de calendário.                  |
-| **Mínimo**        | Disponibilidade >= 83% (máximo 5 dias de indisponibilidade por mês, conforme requisito original).                                                   |
-| **Intervalo OK**  | Disponibilidade >= 95% (menos de 36 horas de indisponibilidade por mês).                                                                           |
-| **Ótimo**         | Disponibilidade >= 99,9% (menos de 43 minutos de indisponibilidade por mês).                                                                        |
+| Campo             | Descrição / Exemplo                                                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| **Identificação** | NF04                                                                                                                                |
+| **Objetivo**      | Garantir alta disponibilidade da plataforma, permitindo acesso contínuo aos serviços essenciais.                                    |
+| **Escala**        | Tempo/dias de indisponibilidade por mês; porcentagem de tempo disponível (uptime).                                                  |
+| **Métrica**       | Medir o tempo total de indisponibilidade dos serviços críticos (autenticação, catálogo, compra e download) em um mês de calendário. |
+| **Mínimo**        | Disponibilidade >= 83% (máximo 5 dias de indisponibilidade por mês, conforme requisito original).                                   |
+| **Intervalo OK**  | Disponibilidade >= 95% (menos de 36 horas de indisponibilidade por mês).                                                            |
+| **Ótimo**         | Disponibilidade >= 99,9% (menos de 43 minutos de indisponibilidade por mês).                                                        |
 
-| Campo             | Descrição / Exemplo                                                                                                                                   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificação** | NF05                                                                                                                                                  |
+| Campo             | Descrição / Exemplo                                                                                                                                 |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Identificação** | NF05                                                                                                                                                |
 | **Objetivo**      | Garantir tempo de resposta adequado nas operações de busca, navegação e downloads para preservar a experiência do usuário.                          |
-| **Escala**        | Tempo decorrido em segundos (escala de proporção).                                                                                                   |
+| **Escala**        | Tempo decorrido em segundos (escala de proporção).                                                                                                  |
 | **Métrica**       | Medir o tempo entre ação do usuário (ex.: pressionar "Encontrar fotos") e a apresentação da listagem de resultados; medir latência média/percentis. |
-| **Mínimo**        | Menos de 10s quando houver mais de 1000 fotografias; para demais casos, menos de 5s para >=95% das requisições.                                      |
-| **Intervalo OK**  | Tempo de resposta entre 0,5 e 3 s para >=98% das requisições.                                                                                        |
+| **Mínimo**        | Menos de 10s quando houver mais de 1000 fotografias; para demais casos, menos de 5s para >=95% das requisições.                                     |
+| **Intervalo OK**  | Tempo de resposta entre 0,5 e 3 s para >=98% das requisições.                                                                                       |
 | **Ótimo**         | Menos de 0,5 s para 100% das requisições.                                                                                                           |
 
-| Campo             | Descrição / Exemplo                                                                                                                                   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificação** | NF06                                                                                                                                                  |
-| **Objetivo**      | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.         |
-| **Escala**        | Número de usuários simultâneos e volume de objetos de mídia armazenados; também tempo de provisionamento para escala horizontal.                       |
+| Campo             | Descrição / Exemplo                                                                                                                                      |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Identificação** | NF06                                                                                                                                                     |
+| **Objetivo**      | A arquitetura deve possibilitar expansão para suportar aumento no volume de mídias e utilizadores sem comprometer a experiência de navegação.            |
+| **Escala**        | Número de usuários simultâneos e volume de objetos de mídia armazenados; também tempo de provisionamento para escala horizontal.                         |
 | **Métrica**       | Medir a capacidade máxima suportada sem degradar NF05 (desempenho) além do intervalo OK; medir tempo para adicionar nós/instâncias e reequilibrar carga. |
-| **Mínimo**        | Suportar 10.000 acessos simultâneos com degradação de desempenho controlada (picos toleráveis conforme NF05 mínimo).                                 |
+| **Mínimo**        | Suportar 10.000 acessos simultâneos com degradação de desempenho controlada (picos toleráveis conforme NF05 mínimo).                                   |
 | **Intervalo OK**  | Suportar aumento de 2x na carga em até 15 minutos com balanceamento e provisionamento automáticos e sem exceder NF05 Intervalo OK.                       |
-| **Ótimo**         | Escalar automaticamente para 4x a carga base em <=5 minutos mantendo NF05 Ótimo para 95% das requisições.                                             |
+| **Ótimo**         | Escalar automaticamente para 4x a carga base em <=5 minutos mantendo NF05 Ótimo para 95% das requisições.                                                |
 
 ### 9.2 Requisitos não funcionais não mensuráveis - operacionalização
 
@@ -145,23 +145,23 @@ Abaixo descrevemos como cada requisito não-funcional considerado não-mensuráv
 
 - NF01 — Controle de acesso de usuários (Segurança)
 
-	- Como será atingido: implementação de autenticação por tokens (OAuth 2.0 / OpenID Connect) e autorização baseada em funções (RBAC). Senhas armazenadas com hashing forte (bcrypt/Argon2). Controle de sessão, timeouts e proteção contra brute-force (rate limiting + bloqueio temporário). Logs de auditoria para ações sensíveis (uploads, alterações de preço, compras).  
-	- Responsáveis/Componentes: Serviço de Identidade (Auth Service), gateway de API, base de dados de usuários.  
-	- Evidências/Verificação: testes de penetração, revisão de código de segurança, varredura de dependências (SCA), logs de auditoria e relatórios de acesso.  
-	- Critério de aceitação: apenas usuários autenticados conseguem acessar endpoints restritos; permissões testadas via casos de teste automatizados; auditoria mostra trilha de eventos por usuário.
+  - Como será atingido: implementação de autenticação por tokens (OAuth 2.0 / OpenID Connect) e autorização baseada em funções (RBAC). Senhas armazenadas com hashing forte (bcrypt/Argon2). Controle de sessão, timeouts e proteção contra brute-force (rate limiting + bloqueio temporário). Logs de auditoria para ações sensíveis (uploads, alterações de preço, compras).
+  - Responsáveis/Componentes: Serviço de Identidade (Auth Service), gateway de API, base de dados de usuários.
+  - Evidências/Verificação: testes de penetração, revisão de código de segurança, varredura de dependências (SCA), logs de auditoria e relatórios de acesso.
+  - Critério de aceitação: apenas usuários autenticados conseguem acessar endpoints restritos; permissões testadas via casos de teste automatizados; auditoria mostra trilha de eventos por usuário.
 
 - NF02 — Usabilidade e navegabilidade (Usabilidade)
 
-	- Como será atingido: aplicar princípios de design responsivo (mobile-first), testes de usabilidade com protótipos (2-4 usuários por iteração), e métricas de UX (taxa de conversão, tempo para completar tarefas-chave). Implementação de componentes UI reutilizáveis e acessibilidade.  
-	- Responsáveis/Componentes: equipe de produto/UX, front-end, QA.  
-	- Evidências/Verificação: relatórios de sessões de teste de usabilidade, resultados de testes A/B, métricas de monitoramento real (p. ex. tempo médio para checkout, taxa de desistência), e validação de acessibilidade automática/manual.  
-	- Critério de aceitação: fluxos críticos (upload, busca, compra) executáveis por usuários de teste sem assistência; conformidade verificada por ferramenta e revisão manual.
+  - Como será atingido: aplicar princípios de design responsivo (mobile-first), testes de usabilidade com protótipos (2-4 usuários por iteração), e métricas de UX (taxa de conversão, tempo para completar tarefas-chave). Implementação de componentes UI reutilizáveis e acessibilidade.
+  - Responsáveis/Componentes: equipe de produto/UX, front-end, QA.
+  - Evidências/Verificação: relatórios de sessões de teste de usabilidade, resultados de testes A/B, métricas de monitoramento real (p. ex. tempo médio para checkout, taxa de desistência), e validação de acessibilidade automática/manual.
+  - Critério de aceitação: fluxos críticos (upload, busca, compra) executáveis por usuários de teste sem assistência; conformidade verificada por ferramenta e revisão manual.
 
 - NF03 — Conformidade legal (Legalidade)
 
-	- Como será atingido: definir requisitos legais e políticas (LGPD, direito autoral e direito de imagem), incluir termos de uso e fluxos de consentimento para uploads, armazenamento de logs de consentimento, e mecanismo para remoção de conteúdo mediante solicitação. Revisão jurídica das políticas e workflows.  
-	- Responsáveis/Componentes: equipe jurídica, back-end, product owner.  
-	- Evidências/Verificação: documentação de políticas, registros de consentimento, relatórios de conformidade, auditorias legais periódicas.  
-	- Critério de aceitação: mecanismos de coleta de consentimento implementados e auditáveis; testes de processo de remoção de conteúdo funcionais; revisão legal aprovada.
+  - Como será atingido: definir requisitos legais e políticas (LGPD, direito autoral e direito de imagem), incluir termos de uso e fluxos de consentimento para uploads, armazenamento de logs de consentimento, e mecanismo para remoção de conteúdo mediante solicitação. Revisão jurídica das políticas e workflows.
+  - Responsáveis/Componentes: equipe jurídica, back-end, product owner.
+  - Evidências/Verificação: documentação de políticas, registros de consentimento, relatórios de conformidade, auditorias legais periódicas.
+  - Critério de aceitação: mecanismos de coleta de consentimento implementados e auditáveis; testes de processo de remoção de conteúdo funcionais; revisão legal aprovada.
 
 #### <span style="color: blue; font-size: 20px">#</span> [GLOSSÁRIO](../glossario/glossario.md)

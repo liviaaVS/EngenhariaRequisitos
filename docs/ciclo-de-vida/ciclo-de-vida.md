@@ -61,26 +61,39 @@ O requisito é considerado concluído quando implementado e testado com sucesso,
 # Estado atual de cada requisito
 
 Requisitos Funcionais
+| Código | Nome                            | Status       | Criticidade | Prioridade |
+|--------|---------------------------------|--------------|-------------|------------|
+| RF01   | Cadastro de usuários            | Documentação | Alta        | Alta       |
+| RF02   | Autenticação de usuários        | Documentação | Alta        | Alta       |
+| RF03   | Gestão de perfil                | Documentação | Média       | Média      |
+| RF04   | Upload de mídias                | Documentação | Alta        | Alta       |
+| RF05   | Gestão de catálogo              | Documentação | Alta        | Alta       |
+| RF06   | Definição de preços e licenças  | Documentação | Alta        | Alta       |
+| RF07   | Visualização de prévias         | Documentação | Média       | Média      |
+| RF08   | Busca e filtros                 | Documentação | Alta        | Alta       |
+| RF09   | Criação de álbuns               | Documentação | Média       | Média      |
+| RF10   | Compra de mídias                | Documentação | Alta        | Alta       |
+| RF11   | Download de conteúdos           | Documentação | Alta        | Alta       |
+| RF12   | Histórico de compras            | Documentação | Média       | Média      |
+| RF13   | Relatórios de vendas            | Documentação | Média       | Média      |
+| RF14   | Comunicação entre usuários      | Documentação | Média       | Média      |
+| RF15   | Gestão de eventos               | Documentação | Alta        | Alta       |
+| RF16   | Credenciamento de fotógrafos    | Documentação | Alta        | Alta       |
+| RF17   | Gestão de direitos de imagem    | Documentação | Alta        | Alta       |
+| RF18   | Avaliação de conteúdos          | Documentação | Baixa       | Baixa      |
+| RF19   | Moderação e remoção de conteúdo | Documentação | Alta        | Alta       |
+| RF20   | Perfil de visualização pública  | Documentação | Média       | Média      |
 
-| Código | Nome                            | Estado Atual |
-| ------ | ------------------------------- | ------------ |
-| RF01   | Cadastro de usuários            | Documentação |
-| RF02   | Autenticação de usuários        | Documentação |
-| RF03   | Gestão de perfil                | Documentação |
-| RF04   | Upload de mídias                | Documentação |
-| RF05   | Gestão de catálogo              | Documentação |
-| RF06   | Definição de preços e licenças  | Documentação |
-| RF07   | Visualização de prévias         | Documentação |
-| RF08   | Busca e filtros                 | Documentação |
-| RF09   | Criação de álbuns               | Documentação |
-| RF10   | Compra de mídias                | Documentação |
-| RF11   | Download de conteúdos           | Documentação |
-| RF12   | Histórico de compras            | Documentação |
-| RF13   | Relatórios de vendas            | Documentação |
-| RF14   | Comunicação entre usuários      | Documentação |
-| RF15   | Gestão de eventos               | Documentação |
-| RF16   | Credenciamento de fotógrafos    | Documentação |
-| RF17   | Gestão de direitos de imagem    | Documentação |
-| RF18   | Avaliação de conteúdos          | Documentação |
-| RF19   | Moderação e remoção de conteúdo | Documentação |
-| RF20   | Perfil de visualização pública  | Documentação |
+
+
+Requisitos não Funcionais
+
+
+| Código | Nome                           | Status       | Criticidade | Prioridade |
+|--------|--------------------------------|--------------|-------------|------------|
+| NF01   | Controle de acesso de usuários | Documentação | Alta        | Alta       |
+| NF02   | Usabilidade e navegabilidade   | Documentação | Alta        | Alta       |
+| NF03   | Conformidade legal             | Documentação | Alta        | Alta       |
+| NF04   | Disponibilidade                | Documentação | Média       | Média      |
+| NF05   | Desempenho                     | Documentação | Alta        | Alta       |
+| NF06   | Escalabilidade                 | Documentação | Média       | Média      |
