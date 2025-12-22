@@ -1,4 +1,4 @@
-## **Fontes de elicitação**, de forma coerente com o seu Documento de Visão:
+## **Fontes de elicitação**:
 
 * **FE1 – Documento de Visão**
 * **FE2 – Análise de Stakeholders (Fotógrafo, Cliente, Organizador, Visitante)**
